@@ -24,7 +24,7 @@
 - (void)willActivate {
     [super willActivate];
     NSDate *now = [[NSDate alloc] init];
-    NSDictionary *time = @{@"time":[NSString stringWithFormat:@"%f",[now timeIntervalSince1970]]};
+    NSDictionary *time = @{@"time":[NSNumber numberWithDouble:[now timeIntervalSince1970]]};
     NSArray *contexts = [[NSArray alloc] initWithObjects:time,time,nil];
     NSArray *names = [[NSArray alloc] initWithObjects:@"page",@"page",nil];
     [WKInterfaceController reloadRootControllersWithNames:names contexts:contexts];

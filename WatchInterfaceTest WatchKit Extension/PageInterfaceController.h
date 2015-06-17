@@ -13,4 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *label;
 
+@property (strong, nonatomic) NSNumber *time;
+
 @end
