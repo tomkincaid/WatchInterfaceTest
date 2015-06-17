@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--interface-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="interface" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="Interface" textAlignment="center" id="ZQX-mj-CpM"/>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+        <!--page-->
+        <scene sceneID="K99-Us-Rvi">
+            <objects>
+                <controller identifier="page" id="7b6-UB-DbC" customClass="PageInterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="rP4-dJ-9WM"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="rP4-dJ-9WM" id="V4O-72-Qyp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="757" y="464"/>
+        </scene>
+    </scenes>
+</document>
